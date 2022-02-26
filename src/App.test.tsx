@@ -1,9 +1,16 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("Genaral Container", () => {
+    render(<App />);
+    // eslint-disable-next-line testing-library/no-node-access
+    const container = document.querySelector('[class="genaral-container"]');
+    expect(container).toBeInTheDocument();
+});
+test("Common Settings Container", () => {
+    render(<App />);
+    // eslint-disable-next-line testing-library/no-node-access
+    const container = document.querySelector('[class="common-container"]');
+    expect(container).toBeInTheDocument();
 });

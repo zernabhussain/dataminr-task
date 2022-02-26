@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: #141414;
+    background-color: #000000;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,4 +8,44 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+.custom-switch {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    background-color: rgb(39, 39, 39);
+    text-align: start;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-switch > p {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.genaral-container {
+    text-align: start;
+    width: 70%;
+}
+
+.common-container {
+    width: 370px;
+    text-align: left;
+}
+.common-container > div {
+    background-color: rgb(49, 49, 49);
+    border-radius: 5px;
+}
+
+.numeric-dropdown {
+    width: 80px;
+    background-color: #494848;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.switch-container {
+    padding-bottom: unset !important;
+    margin-left: -4px !important;
 }
