@@ -1,6 +1,6 @@
-export type itemTypes = {
+export type ItemType = {
     id: number;
     title: string;
     component?: any;
-    children?: itemTypes[];
+    children?: ItemType[];
 };

@@ -1,16 +1,18 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("Genaral Container", () => {
+test("General Container is rendered", () => {
     render(<App />);
-    // eslint-disable-next-line testing-library/no-node-access
-    const container = document.querySelector('[class="genaral-container"]');
-    expect(container).toBeInTheDocument();
+    const generalContainer = screen.getByTestId("general-container");
+    expect(generalContainer).toBeInTheDocument();
 });
-test("Common Settings Container", () => {
+
+test("Multiple Common Settings Containers are rendered", () => {
     render(<App />);
-    // eslint-disable-next-line testing-library/no-node-access
-    const container = document.querySelector('[class="common-container"]');
-    expect(container).toBeInTheDocument();
+    const commonContainers = screen.getAllByTestId("common-container");
+    expect(commonContainers.length).toBeGreaterThan(0);
+    commonContainers.forEach(container => {
+        expect(container).toBeInTheDocument();
+    });
 });

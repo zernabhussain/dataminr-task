@@ -1,51 +1,74 @@
-.App {
-    text-align: center;
-    background-color: #000000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Global Styles */
+:root {
+  --background-dark: #000000;
+  --background-medium: #272727;
+  --background-light: #313131;
+  --primary-color: #ffffff;
+  --secondary-color: #494848;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --border-radius: 5px;
+  --font-size-responsive: calc(10px + 2vmin);
 }
+
+/* App container styling */
+.App {
+  text-align: center;
+  background-color: var(--background-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-responsive);
+  color: var(--primary-color);
+}
+
+/* Custom Switch component styling */
 .custom-switch {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    background-color: rgb(39, 39, 39);
-    text-align: start;
-    padding: 10px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-medium);
+  text-align: left;
+  padding: var(--spacing-small);
+  border-radius: var(--border-radius);
+  gap: var(--spacing-small);
 }
 
 .custom-switch > p {
-    padding: 10px;
-    margin-left: 10px;
+  margin: 0;
+  padding-left: var(--spacing-small);
 }
 
-.genaral-container {
-    text-align: start;
-    width: 70%;
+/* General Container styling */
+.general-container {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
 }
 
+/* Common Container styling */
 .common-container {
-    width: 370px;
-    text-align: left;
+  width: 370px;
+  text-align: left;
 }
+
 .common-container > div {
-    background-color: rgb(49, 49, 49);
-    border-radius: 5px;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-small);
 }
 
+/* Numeric Dropdown styling */
 .numeric-dropdown {
-    width: 80px;
-    background-color: #494848;
-    padding: 0px 10px;
-    border-radius: 5px;
+  width: 80px;
+  background-color: var(--secondary-color);
+  padding: 0 var(--spacing-small);
+  border-radius: var(--border-radius);
 }
 
+/* Switch Container styling */
 .switch-container {
-    padding-bottom: unset !important;
-    margin-left: -4px !important;
+  margin-left: 0 !important;
+  padding-bottom: 0 !important;
 }
