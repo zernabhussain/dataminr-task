@@ -2,6 +2,8 @@
 
 This project implements a React component for managing feature flags and account limits. The UI is based on a provided screenshot and follows specific behavioral rules.
 
+### Note: This React project serves as a demonstration of my frontend skills, utilizing React, TypeScript, and fundamental component testing. While it may not include advanced features, it showcases my proficiency in building functional and well-structured applications.
+
 ![Alt text](./task-ui.png)
 
 
@@ -37,3 +39,4 @@ This project implements a React component for managing feature flags and account
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
+4. To run the basic test case: `npm test`
